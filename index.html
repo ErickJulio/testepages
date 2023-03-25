@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pontuação Projetos QA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Pontuação Projetos QA</h1>
+    <label for="nome-qa">Nome do QA:</label>
+    <input type="text" id="nome-qa" name="nome-qa">
+    
+      
+  </header>
+
+  <main>
+    <section class="score-form">
+      <h2>Tipo de Projeto:</h2>
+      <form>
+        <div class="projeto">
+          <label for="elo-tecnico">Elo Técnico em QA para o terceiro</label>
+          <input type="number" id="elo-tecnico" name="projeto1" min="0" max="8" value="0">
+          <input type="text" id="nome-projeto1" name="nome-projeto1" placeholder="Nome do projeto">
+        </div>
+
+        <div class="projeto">
+          <label for="sem-qa">Projetos de terceiros sem QA</label>
+          <input type="number" id="sem-qa" name="projeto2" min="0" max="4" value="0">
+          <input type="text" id="nome-projeto2" name="nome-projeto2" placeholder="Nome do projeto">
+        </div>
+
+        <div class="projeto">
+          <label for="automacoes">Projetos internos com automações e geração de casos de testes</label>
+          <input type="number" id="automacoes" name="projeto3" min="0" max="2" value="0">
+          <input type="text" id="nome-projeto3" name="nome-projeto3" placeholder="Nome do projeto">
+        </div>
+
+
+        <button type="button" id="calcular-btn">Calcular Pontuação</button>
+        <button type="button" id="reset-btn">Zerar Pontuação</button>
+      </form>
+    </section>
+
+    <section class="score-result">
+      <h2>Resultado:</h2>
+      <p id="pontuacao">Sua pontuação é:</p>
+    </section>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="projeto1-nome"></td>
+          </tr>
+          <tr>
+            <td id="projeto2-nome"></td>
+          </tr>
+          <tr>
+            <td id="projeto3-nome"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
